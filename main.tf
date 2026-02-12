@@ -7,15 +7,15 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "devops-ci-iac-alvaro-0226"
-    key     = "state/terraform.tfstate"
-    region  = "us-east-2"
+    bucket = "devops-ci-iac-alvaro-0226"
+    key    = "state/terraform.tfstate"
+    region = "us-east-2"
     # profile = "AdministratorAccess-530482047728"
   }
 }
 
 provider "aws" {
-  region  = "us-east-2"
+  region = "us-east-2"
   # profile = "AdministratorAccess-530482047728"
 }
 
