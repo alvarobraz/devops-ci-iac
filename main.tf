@@ -5,6 +5,13 @@ terraform {
       version = "6.31.0"
     }
   }
+
+  backend "s3" {
+    bucket  = "devops-ci-iac-alvaro-0226"
+    key     = "state/terraform.tfstate"
+    region  = "us-east-2"
+    profile = "AdministratorAccess-530482047728"
+  }
 }
 
 provider "aws" {
