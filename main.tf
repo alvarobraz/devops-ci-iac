@@ -10,13 +10,13 @@ terraform {
     bucket  = "devops-ci-iac-alvaro-0226"
     key     = "state/terraform.tfstate"
     region  = "us-east-2"
-    profile = "AdministratorAccess-530482047728"
+    # profile = "AdministratorAccess-530482047728"
   }
 }
 
 provider "aws" {
   region  = "us-east-2"
-  profile = "AdministratorAccess-530482047728"
+  # profile = "AdministratorAccess-530482047728"
 }
 
 resource "aws_s3_bucket" "terraform-state" {
